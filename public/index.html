@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chotko</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 10vh;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>Chotko</h1>
+<h2></h2>
+<script>
+    function main(data) {
+        const h2 = document.querySelector('h2');
+        h2.innerHTML = data.ip;
+    }
+</script>
+<script src="https://api.ipify.org/?format=jsonp&callback=main"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube</title>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+<div id="youtube-player"></div>
+<script>
+    let player;
+    function main() {
+        player = new YT.Player('youtube-player', {
+            height: 480,
+            width: 640,
+            videoId: location.hash.slice(1)
+        });
+    }
+    addEventListener('load', main);
+</script>
+</body>
+</html>
